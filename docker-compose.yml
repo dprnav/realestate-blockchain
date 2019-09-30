@@ -16,15 +16,17 @@ services:
     restart: always
     ports:
       - "80:3000"
-  mariadb:
-    image: mariadb
-    container_name: mariadb
+  dcert:
+    image: dcert
+    build: ./digital-certificate
+    container_name: dcert
+    restart: always
     volumes:
-      - mariadb:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: redhat
+      - digitalcertificate:/app/certificate
     ports:
-      - "3306:3306"
+      - "8080:80"
 volumes:
     mariadb:
+      driver: local
+    digitalcertificate:
       driver: local
