@@ -18,6 +18,7 @@ services:
       - "80:3000"
   mariadb:
     image: mariadb
+    build: ./mysql
     container_name: mariadb
     volumes:
       - mariadb:/var/lib/mysql
