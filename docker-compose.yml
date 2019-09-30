@@ -22,7 +22,7 @@ services:
     container_name: dcert
     restart: always
     volumes:
-      - digitalcertificate:/app/certificate
+      - digitalcertificate:/app/certificates
     ports:
       - "8080:80"
 volumes:
