@@ -27,7 +27,6 @@ services:
       - MYSQL_DATABASE=bitcoin
       - MYSQL_DATABASE=property
     command: --default-authentication-plugin=mysql_native_password
-    command: bash -c "mysql -u root -p${MYSQL_ROOT_PASSWORD} bitcoin < /sql/bitcoin.sql && mysql -u root -p${MYSQL_ROOT_PASSWORD} property < /sql/property.sql"
     ports:
       - "3306:3306"
 volumes:
