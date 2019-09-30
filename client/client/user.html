@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SmartLands - Landing Page Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="SmartLands Landing Page Template">
+	<meta name="keywords" content="SmartLands, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">-->
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/addPropertyPopup.css"/>
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 header-top-left">
+						<div class="top-info">
+							<i class="fa fa-phone"></i>
+							(+88) 797 664 4707
+						</div>
+						<div class="top-info">
+							<i class="fa fa-envelope"></i>
+							info@smartlands.com
+						</div>
+					</div>
+					<div class="col-lg-6 text-lg-right header-top-right">
+						<div class="user-panel">
+							<a id="userName" ></a>
+							<a href="./index.html"><i class="fa fa-sign-in"></i> Logout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="site-navbar">
+						<a href="#" class="site-logo"><img src="img/logo.png" alt=""></a>
+						<div class="nav-switch">
+							<i class="fa fa-bars"></i>
+						</div>
+						<ul class="main-menu">
+							<li><a href="user.html">Home</a></li>
+							<li><a href="myProperties.html">My Properties</a></li>
+							<li><a href="listProperties.html">List Properties</a></li>
+							<li><a href="bid.html">Bid</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="about.html">ABOUT US</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Hero section -->
+	<section class="hero-section set-bg" data-setbg="img/bg.jpg">
+		<div class="container hero-text text-white">
+			<h2>find your place with our local life style</h2>
+			<p>Search real estate property records, houses, condos, land and more on SmartLands.com®.<br>Find property info from the most comprehensive source data.</p>
+			<div id="adminAddProperty"></div>
+		</div>
+	</section>
+
+	<!-- Hero section end -->
+
+
+	<!-- Filter form section -->
+
+	<div class="filter-search">
+		<div class="container">
+			<form class="filter-form" onSubmit="App.searchProperty(); return false;">
+				<select id="city1" selected="City">
+					<option value="City">Select City</option>
+					<option value="Jaipur">Jaipur</option>
+					<option value="Agra">Agra</option>
+					<option value="Delhi">Delhi</option>
+				</select>
+				<select id="state1" selected="State">
+					<option value="State">State</option>
+					<option value="Rajasthan">Rajasthan</option>
+					<option value="Uttar Pradesh">Uttar Pradesh</option>
+				</select>
+				<button class="site-btn fs-submit">SEARCH</button>
+			</form>
+		</div>
+	</div>
+	<!-- Filter form section end -->
+</br>
+	<!-- Clients section -->
+	<div class="clients-section">
+		<div class="container">
+			<div class="clients-slider owl-carousel">
+				<a href="#">
+					<img src="img/partner/1.png" alt="">
+				</a>
+				<a href="#">
+					<img src="img/partner/2.png" alt="">
+				</a>
+				<a href="#">
+					<img src="img/partner/3.png" alt="">
+				</a>
+				<a href="#">
+					<img src="img/partner/4.png" alt="">
+				</a>
+				<a href="#">
+					<img src="img/partner/5.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Clients section end -->
+
+
+
+	<!-- Footer section -->
+	<footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 footer-widget">
+					<img src="img/logo.png" alt="">
+					<p>Lorem ipsum dolo sit azmet, consecter dipise consult  elit. Maecenas mamus antesme non anean a dolor sample tempor nuncest erat.</p>
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-widget">
+					<div class="contact-widget">
+						<h5 class="fw-title">CONTACT US</h5>
+						<p><i class="fa fa-map-marker"></i>3711-2880 Nulla St, Mankato, Mississippi </p>
+						<p><i class="fa fa-phone"></i>(+91) 797 664 4707</p>
+						<p><i class="fa fa-envelope"></i>info@smartlands.com</p>
+						<p><i class="fa fa-clock-o"></i>Mon - Sat, 08 AM - 06 PM</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 footer-widget">
+					<div class="double-menu-widget">
+						<h5 class="fw-title">POPULAR PLACES</h5>
+						<ul>
+							<li><a href="">Florida</a></li>
+							<li><a href="">New York</a></li>
+							<li><a href="">Washington</a></li>
+							<li><a href="">Los Angeles</a></li>
+							<li><a href="">Chicago</a></li>
+						</ul>
+						<ul>
+							<li><a href="">St Louis</a></li>
+							<li><a href="">Jacksonville</a></li>
+							<li><a href="">San Jose</a></li>
+							<li><a href="">San Diego</a></li>
+							<li><a href="">Houston</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6  footer-widget">
+					<div class="newslatter-widget">
+						<h5 class="fw-title">NEWSLETTER</h5>
+						<p>Subscribe your email to get the latest news and new offer also discount</p>
+						<form class="footer-newslatter-form">
+							<input type="text" placeholder="Email address">
+							<button><i class="fa fa-send"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-nav">
+					<ul>
+						<li><a href="user.html">Home</a></li>
+						<li><a href="myProperties.html">My Properties</a></li>
+						<li><a href="listProperties.html">List Properties</a></li>
+						<li><a href="bid.html">Bid</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="about.html">ABOUT US</a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+	<!-- HTML Start -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+				<div class="container-contact1">
+
+					<div class="contact1-pic js-tilt" data-tilt>
+						<img src="images/img-01.png" alt="IMG">
+					</div>
+
+					<form class="contact1-form validate-form" onSubmit="App.addProperty(); return false;">
+						<span class="contact1-form-title">
+							Add Property
+						</span>
+
+						<div class="wrap-input1 validate-input" data-validate = "Name is required">
+							<input class="input1" type="text" id="address" name="address" placeholder="Home Address">
+							<span class="shadow-input1"></span>
+						</div>
+
+<div class="wrap-input1 validate-input">
+	<select id="currency" class="input1">
+		<option selected>Currency</option>
+		<option>INR</option>
+		<option>Ether</option>
+	</select>
+		<span class="shadow-input1"></span>
+</div>
+
+
+						<div class="wrap-input1 validate-input" data-validate = "Amount is required">
+							<input class="input1" type="number" id="amount" name="amount" placeholder="Amount">
+							<span class="shadow-input1"></span>
+						</div>
+
+						<div class="wrap-input1 validate-input" data-validate = "Area is required">
+							<input class="input1" type="number" id="area" name="area" placeholder="Area (meter sq.)">
+							<span class="shadow-input1"></span>
+						</div>
+
+						<div class="wrap-input1 validate-input" data-validate = "City is Required">
+							<input class="input1" type="text" id="city" name="city" placeholder="City">
+							<span class="shadow-input1"></span>
+						</div>
+
+						<div class="wrap-input1 validate-input" data-validate = "State is required">
+                    <input class="input1" type="text" id="state" name="state" placeholder="State">
+                    <span class="shadow-input1"></span>
+            </div>
+
+            <div class="wrap-input1 validate-input" data-validate = "Country is Required">
+                    <input class="input1" type="text" id="country" name="country" placeholder="Country">
+                    <span class="shadow-input1"></span>
+            </div>
+
+						<!--<div class="wrap-input1 validate-input" data-validate = "Country is Required">
+										<input class="input1" type="file" id="myfile" name="myfile" multiple />
+										<span class="shadow-input1"></span>
+						</div>-->
+
+						<div class="container-contact1-form-btn">
+							<button class="contact1-form-btn">
+								<span>
+									Add Property
+									<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+								</span>
+							</button>
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+
+  </div>
+	<!-- HTML End-->
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/user.js"></script>
+	<script src="js/truffle-contract.js"></script>
+  <script src="js/web3.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>-->
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	#map {
+		width:100%;
+    height:100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	}
+	</style>
+</head>
+<body>
+	<div id="map"></div>
+	<script>
+	function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+  }
+	function initMap() {
+
+		var geocoder =  new google.maps.Geocoder();
+		geocoder.geocode( { 'address': getUrlVars()["address"]}, function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+			var uluru = {lat: results[0].geometry.location.lat(), lng: results[0].geometry.location.lng()};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 4,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			});
+			google.maps.event.addListener(marker, 'dragend', function (evt) {
+				console.log("Lat: "+evt.latLng.lat().toFixed(3));
+				console.log("Lng: "+evt.latLng.lng().toFixed(3));
+				console.log("\n");
+			});
+          } else {
+            alert("Something got wrong " + status);
+          }
+		});
+
+	}
+
+	</script>
+	<script async defer
+	src=
+"https://maps.googleapis.com/maps/api/js?key=AIzaSyCOR750iS6_WbMdz7oo_OWMY-T5wXD8T9c&callback=initMap">
+	</script>
+</body>
+</html>
