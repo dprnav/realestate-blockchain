@@ -9,4 +9,4 @@ COPY . /app
 RUN npm install
 
 # start app
-CMD ["sh","-c","truffle migrate --reset && npm run dev"]
+CMD ["sh","-c","./node_modules/.bin/truffle migrate --reset && npm run dev"]
