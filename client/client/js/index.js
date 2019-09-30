@@ -8056,6 +8056,7 @@ App = {
       App.web3Provider = web3.currentProvider;
       web3 = new Web3(web3.currentProvider);
       console.log('MetaMask Connected');
+      console.log(web3.currentProvider);
     } else {
       // Specify default instance if no web3 instance provided
       alert("Install MetaMask");
