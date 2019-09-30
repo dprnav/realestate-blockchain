@@ -1,0 +1,11 @@
+version: '3'
+services:
+  client:
+    image: webapp
+    build: ./client
+    depends_on:
+       - ganache
+    container_name: webapp
+    restart: always
+    ports:
+      - "80:3000"

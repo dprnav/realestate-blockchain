@@ -7,7 +7,6 @@ WORKDIR /app
 # install and cache app dependencies
 COPY . /app
 RUN npm install --silent
-RUN truffle migrate --reset
 
 # start app
-CMD ["npm","run","dev"]
+CMD ["sh","-c","truffle migrate --reset && npm run dev"]
