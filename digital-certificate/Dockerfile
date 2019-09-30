@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . /app/
 
 RUN pip install flask
-RUN pip install pillow
+RUN pip install pil
 
 EXPOSE 80
 
