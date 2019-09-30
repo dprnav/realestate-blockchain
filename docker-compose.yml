@@ -5,7 +5,8 @@ services:
      build: ./ganache-cli
      container_name: ganache
      restart: always
-     
+     ports:
+      - "8545:8545"
   client:
     image: webapp
     build: ./client
