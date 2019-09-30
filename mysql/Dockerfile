@@ -10,7 +10,7 @@ ENV MYSQL_DATA_DIR=/var/lib/mysql \
 
 ADD . /tmp/
 
-RUN /etc/init.d/mysql start && \
+RUN mysqld && \
          mysql -u root -p$MYSQL_ROOT_PASSWORD  -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'redhat';FLUSH PRIVILEGES;" && \
         mysql -u root -p${MYSQL_ROOT_PASSWORD}  < /tmp/bitcoin.sql && mysql -u root -p${MYSQL_ROOT_PASSWORD}  < /tmp/property.sql
 
