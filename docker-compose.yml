@@ -1,5 +1,11 @@
 version: '3'
 services:
+  ganache:
+     image: ganache-cli
+     build: ./ganache-cli
+     container_name: ganache
+     restart: always
+     
   client:
     image: webapp
     build: ./client
