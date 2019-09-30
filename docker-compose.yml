@@ -17,15 +17,14 @@ services:
     ports:
       - "80:3000"
   mariadb:
-    image: mysql
-    container_name: mysql
+    image: mariadb
+    container_name: mariadb
     volumes:
-      - ./mysql:/sql/
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
       - mariadb:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=redhat
-      - MYSQL_DATABASE=bitcoin
-      - MYSQL_DATABASE=property
+      MYSQL_ROOT_PASSWORD: redhat
+      MYSQL_DATABASE: bitcoin
     command: --default-authentication-plugin=mysql_native_password
     ports:
       - "3306:3306"
