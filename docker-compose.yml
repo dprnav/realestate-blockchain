@@ -18,12 +18,14 @@ services:
       - "80:3000"
   mariadb:
     image: mariadb
-    build: ./mysql
     container_name: mariadb
     volumes:
+      - ./mysql:/sql/
       - mariadb:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: redhat
     command: bash -c "mysql -u root -p$MYSQL_ROOT_PASSWORD  -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'redhat';FLUSH PRIVILEGES;" && \
-            mysql -u root -p${MYSQL_ROOT_PASSWORD}  < /tmp/bitcoin.sql && mysql -u root -p${MYSQL_ROOT_PASSWORD}  < /tmp/property.sql"
+            mysql -u root -p${MYSQL_ROOT_PASSWORD}  < /sql/bitcoin.sql && mysql -u root -p${MYSQL_ROOT_PASSWORD}  < /sql/property.sql"
     ports:
       - "3306:3306"
 volumes:
