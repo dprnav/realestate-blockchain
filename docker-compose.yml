@@ -23,7 +23,6 @@ services:
       - mariadb:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: redhat
-      MYSQL_DATABASE: bitcoin
     ports:
       - "3306:3306"
 volumes:
