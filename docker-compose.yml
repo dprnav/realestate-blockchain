@@ -20,7 +20,6 @@ services:
     image: mariadb
     container_name: mariadb
     volumes:
-      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
       - mariadb:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: redhat
