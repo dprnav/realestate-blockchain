@@ -33,7 +33,7 @@ services:
     volumes:
       - digitalcertificate:/app/certificates
     ports:
-      - "8000:80"
+      - "8000:5050"
 volumes:
     mariadb:
       driver: local
