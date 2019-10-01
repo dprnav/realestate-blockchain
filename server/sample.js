@@ -6,6 +6,7 @@ var http = require('http');
 var fs = require('fs');
 var sha256=require('sha256');
 var child_process = require('child_process');
+const url = require('url');
 app.use(function(req, res, next)
 {
    res.setHeader('Access-Control-Allow-Origin', '*');
@@ -183,7 +184,18 @@ app.post('/upload',function(req,res)
    else
      {
        console.log(req.body.id+'_'+hash);
-       var x='python ./python/gen_cert.py "'+req.body.name+'" "'+req.body.id+'" "'+hash+'"';
+       var urlObject={
+            protocol: 'http',
+            hostname: 'dcert',
+            pathname: '/',
+            query: {
+                    name: req.body.name,
+                    account: req.body.id,
+    				propertyAddress: hash
+            }
+        }
+        var sampleUrl=url.format(urlObject);
+       var x='curl '+sampleUrl.toString();
        child_process.exec(x, function (err){
          if (err) {
          console.log("child processes failed with error code: " + err);
@@ -430,7 +442,18 @@ var hash1="";
 app.post('/buyproperty', function(req, res)
 {
   console.log(req.body.id+"requested to buy property");
-    var x='python ./python/gen_cert.py "'+req.body.name+'" "'+req.body.id+'" "'+req.body.hash+'"';
+  var urlObject={
+       protocol: 'http',
+       hostname: 'dcert',
+       pathname: '/',
+       query: {
+               name: req.body.name,
+               account: req.body.id,
+       propertyAddress: req.body.hash
+       }
+   }
+   var sampleUrl=url.format(urlObject);
+   var x='curl '+sampleUrl.toString();
     child_process.exec(x, function (err){
       if (err) {
       console.log("child processes failed with error code: " + err);

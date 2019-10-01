@@ -25,6 +25,15 @@ services:
       - digitalcertificate:/app/certificates
     ports:
       - "8080:80"
+  server:
+    image: server
+    build: ./server
+    container_name: server
+    restart: always
+    volumes:
+      - digitalcertificate:/app/certificates
+    ports:
+      - "8000:80"
 volumes:
     mariadb:
       driver: local
