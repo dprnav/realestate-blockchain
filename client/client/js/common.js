@@ -1984,7 +1984,7 @@ module.exports = {
   "429": "Too Many Requests",
   "431": "Request Header Fields Too Large",
   "451": "Unavailable For Legal Reasons",
-  "500": "Internal Server Error",
+  "500": "Internal server Error",
   "501": "Not Implemented",
   "502": "Bad Gateway",
   "503": "Service Unavailable",
@@ -7355,7 +7355,7 @@ Url.prototype.parse = function(url, parseQueryString, slashesDenoteHost) {
   }
 
   // figure out if it's got a host
-  // user@server is *always* interpreted as a hostname, and url
+  // user@40.112.63.137 is *always* interpreted as a hostname, and url
   // resolution will treat //foo/bar as host=foo,path=bar because that's
   // how the browser resolves relative URLs.
   if (slashesDenoteHost || proto || rest.match(/^\/\/[^@\/]+@[^@\/]+/)) {
@@ -8094,7 +8094,7 @@ initcurrentAccount: function(){
 
     // An object of options to indicate where to post to
         var post_options = {
-            host: 'server',
+            host: '40.112.63.137',
             port: '5050',
             path: '/myaction',
             method: 'POST',

@@ -8087,7 +8087,7 @@ App = {
 
         // An object of options to indicate where to post to
             var post_options = {
-                host: 'server',
+                host: '40.112.63.137',
                 port: '5050',
                 path: '/myaction',
                 method: 'POST',
@@ -8192,7 +8192,7 @@ App = {
 
    // An object of options to indicate where to post to
        var post_options = {
-           host: 'server',
+           host: '40.112.63.137',
            port: '5050',
            path: '/upload',
            method: 'POST',
@@ -8225,7 +8225,7 @@ App = {
                       });
                       // An object of options to indicate where to post to
                           var post_options1 = {
-                              host: 'server',
+                              host: '40.112.63.137',
                               port: '5050',
                               path: '/addproperty1',
                               method: 'POST',

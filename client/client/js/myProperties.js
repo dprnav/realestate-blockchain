@@ -8088,7 +8088,7 @@ initcurrentAccount: function(){
 
         // An object of options to indicate where to post to
             var post_options = {
-                host: 'server',
+                host: '40.112.63.137',
                 port: '5050',
                 path: '/myaction',
                 method: 'POST',
@@ -8125,7 +8125,7 @@ myProperties: function(){
 
   // An object of options to indicate where to post to
   var post_options = {
-      host: 'server',
+      host: '40.112.63.137',
       port: '5050',
       path: '/myproperty',
       method: 'POST',
@@ -8212,7 +8212,7 @@ sell:function(propertyAddress){
   });
 
   var post_options = {
-      host: 'server',
+      host: '40.112.63.137',
       port: '5050',
       path: '/sellproperty',
       method: 'POST',
@@ -8241,7 +8241,7 @@ nobid:function(propertyAddress){
  });
 
  var post_options1 = {
- host: 'server',
+ host: '40.112.63.137',
  port: '5050',
  path: '/maxamount',
  method: 'POST',
@@ -8261,7 +8261,7 @@ nobid:function(propertyAddress){
 });
 
 var post_options = {
- host: 'server',
+ host: '40.112.63.137',
  port: '5050',
  path: '/cbid',
  method: 'POST',
@@ -8281,7 +8281,7 @@ var post_req = http.request(post_options, function(res) {
      });
 
      var post_options = {
-       host: 'server',
+       host: '40.112.63.137',
        port: '5050',
        path: '/sellproperty',
        method: 'POST',
@@ -8326,7 +8326,7 @@ nosell:function(propertyAddress){
   });
 
   var post_options = {
-      host: 'server',
+      host: '40.112.63.137',
       port: '5050',
       path: '/notsale',
       method: 'POST',

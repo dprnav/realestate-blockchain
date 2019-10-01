@@ -8088,7 +8088,7 @@ initcurrentAccount: function(){
 
         // An object of options to indicate where to post to
             var post_options = {
-                host: 'server',
+                host: '40.112.63.137',
                 port: '5050',
                 path: '/myaction',
                 method: 'POST',
@@ -8136,7 +8136,7 @@ myProperties: function(){
 
   // An object of options to indicate where to post to
   var post_options = {
-      host: 'server',
+      host: '40.112.63.137',
       port: '5050',
       path: '/search',
       method: 'POST',
@@ -8219,7 +8219,7 @@ buyProperty: function(propertyAddress) {
 
   // An object of options to indicate where to post to
       var post_options = {
-          host: 'server',
+          host: '40.112.63.137',
           port: '5050',
           path: '/buyproperty',
           method: 'POST',
@@ -8242,7 +8242,7 @@ buyProperty: function(propertyAddress) {
               });
               // An object of options to indicate where to post to
                   var post_options1 = {
-                      host: 'server',
+                      host: '40.112.63.137',
                       port: '5050',
                       path: '/buyproperty1',
                       method: 'POST',
