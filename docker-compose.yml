@@ -33,9 +33,16 @@ services:
     volumes:
       - digitalcertificate:/app/certificates
     ports:
-      - "8000:5050"
+      - "5050:5050"
+  database:
+    image: mysql
+    container_name: mysql
+    restart: always
+    volumes:
+      - mysql:/var/lib/mysql
+
 volumes:
-    mariadb:
-      driver: local
-    digitalcertificate:
-      driver: local
+  mysql:
+    driver: local
+  digitalcertificate:
+    driver: local
