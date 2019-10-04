@@ -35,7 +35,7 @@ services:
     ports:
       - "5050:5050"
   database:
-    image: mysql
+    image: dprnav/blockchain-database
     container_name: mysql
     restart: always
     volumes:
