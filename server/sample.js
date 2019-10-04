@@ -24,7 +24,7 @@ app.post('/myaction', function(req, res)
                   var mysql = require('mysql');
                   var con = mysql.createConnection(
                     {
-                          host: "mysql",
+                          host: "database",
                           user: "root",
                           password: "",
                           database: "bitcoin"
@@ -80,7 +80,7 @@ app.post('/register', function(req, res)
               //This connection is for select query as this is id is already registered or not.
               var con = mysql.createConnection(
               {
-                    host: "mysql",
+                    host: "database",
                     user: "root",
                     password: "",
                     database: "bitcoin"
@@ -129,7 +129,7 @@ app.post('/register1',function(req,res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
             {
-                host: "mysql",
+                host: "database",
                 user: "root",
                 password: "",
                 database: "bitcoin"
@@ -156,7 +156,7 @@ app.post('/upload',function(req,res)
     var mysql = require('mysql');
     var con = mysql.createConnection(
       {
-            host: "mysql",
+            host: "database",
             user: "root",
             password: "",
             database: "bitcoin"
@@ -243,7 +243,7 @@ app.post('/addproperty1', function(req, res)
     var mysql = require('mysql');
     var con = mysql.createConnection(
       {
-          host: "mysql",
+          host: "database",
           user: "root",
           password: "",
           database: "bitcoin"
@@ -264,7 +264,7 @@ app.post('/myproperty', function(req, res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
     {
-        host: "mysql",
+        host: "database",
         user: "root",
         password: "",
         database: "bitcoin"
@@ -317,7 +317,7 @@ app.post('/onsale', function(req, res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
     {
-        host: "mysql",
+        host: "database",
         user: "root",
         password: "",
         database: "bitcoin"
@@ -369,7 +369,7 @@ app.post('/addbid', function(req, res)
     var mysql = require('mysql');
     var con = mysql.createConnection(
       {
-          host: "mysql",
+          host: "database",
           user: "root",
           password: "",
           database: "bitcoin"
@@ -389,7 +389,7 @@ app.post('/onbid', function(req, res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
     {
-        host: "mysql",
+        host: "database",
         user: "root",
         password: "",
         database: "bitcoin"
@@ -481,7 +481,7 @@ app.post('/buyproperty1', function(req, res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
     {
-        host: "mysql",
+        host: "database",
         user: "root",
         password: "",
         database: "bitcoin"
@@ -513,7 +513,7 @@ app.post('/sellproperty', function(req, res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
     {
-        host: "mysql",
+        host: "database",
         user: "root",
         password: "",
         database: "bitcoin"
@@ -545,7 +545,7 @@ app.post('/search', function(req, res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
     {
-        host: "mysql",
+        host: "database",
         user: "root",
         password: "",
         database: "bitcoin"
@@ -595,7 +595,7 @@ app.post('/notsale', function(req, res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
     {
-        host: "mysql",
+        host: "database",
         user: "root",
         password: "",
         database: "bitcoin"
@@ -626,7 +626,7 @@ app.post('/cbid', function(req, res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
     {
-        host: "mysql",
+        host: "database",
         user: "root",
         password: "",
         database: "bitcoin"
@@ -656,7 +656,7 @@ app.post('/nobid', function(req, res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
     {
-        host: "mysql",
+        host: "database",
         user: "root",
         password: "",
         database: "bitcoin"
@@ -687,7 +687,7 @@ app.post('/maxamount', function(req, res)
   var mysql = require('mysql');
   var con = mysql.createConnection(
     {
-        host: "mysql",
+        host: "database",
         user: "root",
         password: "",
         database: "bitcoin"
