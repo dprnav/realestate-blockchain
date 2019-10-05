@@ -35,3 +35,5 @@ CREATE TABLE `propertydata` (
   `deed` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
+
+GRANT ALL PRIVILEGES ON bitcoin.* TO 'root'@'%' WITH GRANT OPTION;
