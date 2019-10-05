@@ -23,8 +23,7 @@ services:
     restart: always
     volumes:
       - digitalcertificate:/app/certificates
-    ports:
-      - "8080:80"
+
   server:
     image: server
     build: ./server
@@ -34,6 +33,7 @@ services:
       - digitalcertificate:/app/certificates
     ports:
       - "5050:5050"
+      
   database:
     image: database
     build: ./mysql
@@ -41,9 +41,20 @@ services:
     restart: always
     volumes:
       - mysql:/var/lib/mysql
+  ipfs:
+    image: ipfs/go-ipfs
+    container_name: ipfs
+    restart: always
+    volumes:
+      - digitalcertificate:/export
+      - ipfs_staging:/data/ipfs
+    ports:
+      - "8080:8080"
 
 volumes:
   mysql:
     driver: local
   digitalcertificate:
+    driver: local
+  ipfs_staging:
     driver: local

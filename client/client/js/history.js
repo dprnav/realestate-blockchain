@@ -8115,6 +8115,7 @@ history:function(){
              var amount = result[0].c[0]
              var timestamp = result[1].c[0];
              var deed = result[2];
+             var ip = window.location.origin;
              x=i;
              if(i==0 && flag==0){
                  document.getElementById('row').innerHTML += `
@@ -8140,7 +8141,7 @@ history:function(){
                              <p><i class="fa fa-th-large"></i>Amount: `+amount+` Eth</p>
                            </div>
                            <div class="rf-right">
-                             <a class="fa fa-home" style="font-size:22px" href="http://192.168.43.105:8080/ipfs/`+deed+`" target="_blank"></a>
+                             <a class="fa fa-home" style="font-size:22px" href="http://ip:8080/ipfs/`+deed+`" target="_blank"></a>
                            </div>
                          </div>
                        </div>
@@ -8188,7 +8189,7 @@ history:function(){
                              <p><i class="fa fa-th-large"></i>Amount: `+amount+` Eth</p>
                            </div>
                            <div class="rf-right">
-                             <a class="fa fa-home" style="font-size:22px" href="http://192.168.43.105:8080/ipfs/`+deed+`" target="_blank"></a>
+                             <a class="fa fa-home" style="font-size:22px" href="http://ip:8080/ipfs/`+deed+`" target="_blank"></a>
                            </div>
                          </div>
                        </div>
@@ -8235,7 +8236,7 @@ history:function(){
                                     <p><i class="fa fa-th-large"></i>Amount: `+amount+` Eth</p>
                                   </div>
                                   <div class="rf-right">
-                                    <a class="fa fa-home" style="font-size:22px" href="http://192.168.43.105:8080/ipfs/`+deed+`" target="_blank"></a>
+                                    <a class="fa fa-home" style="font-size:22px" href="http://ip:8080/ipfs/`+deed+`" target="_blank"></a>
                                   </div>
                                 </div>
                               </div>

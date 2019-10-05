@@ -8150,6 +8150,7 @@ myProperties: function(){
             var sell_btn='';
             var propertyAddress = temp[6];
             var deed = temp[10];
+            var ip = window.location.origin;
             console.log(temp[2]);
             if(saleStatus=='Not For Sale'){
               sell = 'id="link" name="'+propertyAddress+'"onclick="App.sell(this.name);"';
@@ -8190,7 +8191,7 @@ myProperties: function(){
                             <a class="history" target="_blank" href="history.html?address=`+propertyAddress+`" ><i class="fa fa-th-large"></i> History</a>
                           </div>
                           <div class="rf-right">
-                            <a class="fa fa-home" style="font-size:22px" href="http://192.168.43.105:8080/ipfs/`+deed+`" target="_blank"></a>
+                            <a class="fa fa-home" style="font-size:22px" href="http://ip:8080/ipfs/`+deed+`" target="_blank"></a>
                           </div>
                         </div>
                       </div>
